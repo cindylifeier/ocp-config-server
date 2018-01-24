@@ -1,0 +1,29 @@
+server:
+  port: 8888
+logging:
+  file: /java/OCP_LOGS/ocp-config-server/ocp-config-server.log
+info:
+  component: OCP Config Server
+management:
+  security:
+    enabled: false
+spring:
+  cloud:
+    config:
+      server:
+        # Enable encrypt property for config-server side decryption while serving configuration (if true, also requires `encrypt.key`)
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/FEISystems/ocp-config-data-private
+          force-pull: true
+          username: sadhana.chandravanka@feisystems.com
+          password: 15Rsbond
+
+          # basedir is only effective if remote repository is used
+          # EXAMPLE:
+          # basedir: /java/config-server-git-repo
+          #
+          # Setting a repository to be cloned is to identify a misconfigured configuration source quickly, while the Config Server is starting up.
+          # EXAMPLE:
+          # clone-on-start: true
