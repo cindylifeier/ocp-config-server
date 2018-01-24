@@ -15,4 +15,4 @@ spring:
         encrypt:
           enabled: false
         git:
-          uri: file:/java/ocp-config-data-private
+          uri: file:/java/ocp-config-data
