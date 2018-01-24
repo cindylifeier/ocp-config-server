@@ -15,15 +15,4 @@ spring:
         encrypt:
           enabled: false
         git:
-          uri: https://github.com/FEISystems/ocp-config-data-private
-          force-pull: true
-          username: sadhana.chandravanka@feisystems.com
-          password: 15Rsbond
-
-          # basedir is only effective if remote repository is used
-          # EXAMPLE:
-          # basedir: /java/config-server-git-repo
-          #
-          # Setting a repository to be cloned is to identify a misconfigured configuration source quickly, while the Config Server is starting up.
-          # EXAMPLE:
-          # clone-on-start: true
+          uri: file:/java/ocp-config-data-private
